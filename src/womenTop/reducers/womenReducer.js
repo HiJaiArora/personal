@@ -4,7 +4,7 @@ const initialState = {
 
 function womenReducer(state = initialState, action) {
   switch (action.type) {
-    case "FETCHED":
+    case "API_FETCHED":
       return { data: action.payload };
     case "FAILED":
       return { data: [action.err] };

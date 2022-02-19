@@ -16,7 +16,7 @@ import image from "../assets/Shirt.jpg";
  */
 
 function Cards(props) {
-  const [cardData, setCardData] = React.useState([]);
+  const [cardData, setCardData] = React.useState(props.data);
 
   React.useEffect(() => {
     setCardData(props.data);
@@ -36,7 +36,7 @@ function Cards(props) {
     <>
       <FilterDropDown handleFilter={handleFilter} />
       <div className="Cards">
-        {console.log("check", cardData, cardData.length > 0)}
+        {console.log("check", cardData)}
         {cardData.length > 0 &&
           cardData.map((item) => {
             return (

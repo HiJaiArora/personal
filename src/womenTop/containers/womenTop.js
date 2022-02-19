@@ -13,11 +13,11 @@ import Cards from "../components/cards";
  */
 
 function WomenTop() {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-  // React.useEffect(() => {
-  //   dispatch(fetchData());
-  // }, []);
+  React.useEffect(() => {
+    dispatch(fetchData());
+  }, []);
 
   const data = useSelector((state) => state.womenTop.data);
 
