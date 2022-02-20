@@ -1,5 +1,4 @@
 import axios from "axios";
-import { fetchData } from "../../womenTop/actions/actions";
 import { backdropAction } from "../../spinner/actions/actions";
 const baseURL = "https://rainy-star.surge.sh/products.json";
 

@@ -1,12 +1,12 @@
 const initialState = {
-  data: [],
+  tableData: [],
 };
 
 function womenReducer(state = initialState, action) {
   switch (action.type) {
-    case "API_FETCHED":
+    case "TABLE_DATA_FETCHED":
       return { data: action.payload };
-    case "FAILED":
+    case "TABLE_DATA_FAILED":
       return { data: [action.err] };
     default:
       return initialState;
